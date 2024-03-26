@@ -1,0 +1,23 @@
+<!-- template.component.html -->
+
+<div class="justify-center center bg-blue-500 font-semibold text-center mt-2 p-2 text-xl">
+  <h1>Template Registration Form</h1>
+</div>
+
+<form class="text-center" #userdata="ngForm" (ngSubmit)="register(userdata)">
+  <div>
+    First name: <input class="bg-slate-300 mt-2" type="text" placeholder="Type Your First name" name="fname" ngModel>
+  </div><br>
+  <div>
+    Last name: <input class="bg-slate-300" type="text" placeholder="Type Your Last name" name="lname" ngModel>
+  </div><br>
+  <div>
+    Mail ID: <input class="bg-slate-300" type="text" placeholder="Type Your Email ID" name="mailid" ngModel>
+  </div><br>
+  <div>
+    User Name: <input class="bg-slate-300" type="text" placeholder="Type Your User-name" name="username" ngModel>
+  </div><br>
+  <div>
+    <button class="bg-green-500" type="submit" name="registerButton">Register</button>
+  </div>
+</form>
